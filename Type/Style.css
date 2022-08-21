@@ -1,0 +1,264 @@
+body{
+    background-image: linear-gradient(#5b0427, #0e0106);
+    font-family: 'brithannic-bold-regular', sans-serif;
+}
+
+.d-flex{
+    margin-bottom: 20px;
+    background-image: url(./img/bg.png);
+    height:60vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+.container1{
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    left: 50%;transform: translate(-50% ,-50%);
+    width: 100%;
+   
+}
+.container1 span{
+    display: block;  
+}
+.text1{
+    color: white;
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    position: relative;
+    animation: text  3s 1;
+    
+}
+.text2{
+    color: white;
+    font-size: 40px;
+    letter-spacing: 1px;
+    animation: text2 5s 1;
+
+}
+.load .text2{
+    animation-delay: .10s ;
+}
+@keyframes text {
+    0%{
+     color: white;
+     margin-bottom: -40px;
+     
+    }
+    30%{
+        letter-spacing: 25px;
+        margin-bottom: -40px;
+    }
+    85%{
+        letter-spacing: 8px;
+        margin-bottom: -40px;
+    }
+    
+}
+
+@keyframes text2 {
+    0%{
+     color: white;
+     margin-bottom: -40px;
+    }
+    30%{
+        letter-spacing: 15px;
+        margin-bottom: -40px;
+    }
+    85%{
+        letter-spacing: 1px;
+        margin-bottom: -40px;
+    }
+    
+}
+
+/*=======FAQs=========*/
+.FAQS{
+    min-height: 60vh;
+    color: #fff;
+    margin: 18px 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.title{
+    font-size: 2rem;
+    margin: 2rem 0rem;
+}
+
+.faq{
+    max-width: 700px;
+    padding-bottom: 0.1rem;
+    border-bottom: 1.5px solid #fff;
+    cursor: pointer;
+}
+.question{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.question h3{
+    font-size: 1.2rem;
+    margin: 5px;
+}
+.answer{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1.4s ease;
+}
+.answer p {
+    padding-top: .1rem;
+    line-height: 1.6;
+    font-size: .8rem;
+   
+}
+
+.faq.active .answer{
+    max-height: 300px;
+    animation: fade 1s ease-in-out;
+}
+
+.faq.faq.active svg{
+    transform: rotate(180deg);
+}
+
+svg{
+    transition: transform .5s ease-in;
+}
+
+
+@keyframes fade {
+    from{
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+
+    }
+    
+}
+
+/*========timeline========*/
+.defin-TL{
+    text-align: center;
+    color: #fff;
+    margin-bottom: 25px;
+}
+
+.timeline{
+
+    margin: 0 auto;
+    max-width: 750px;
+    display: 25px;
+    display: grid;
+    grid-template-columns: 1fr 3px  1fr;
+    font-family: 'Fira Sans', sans-serif;
+    color: #fff; 
+}
+.timeline__component{
+   margin: 0 20px 20px 20px;
+   margin-bottom: 50px;
+}
+.timeline__component--bg{
+    padding: 1.5em;
+    background:rgba(255, 255 ,255 , 0.2);
+    box-shadow: 0 0 5px rgba( 0 , 0 , 0, 0.2);
+    border-radius: 10px;
+}
+.timeline__component--bottom{
+    margin-bottom: 0;
+}
+.timeline__date-right{
+    text-align: right;
+}
+.timeline__middle{
+   position: relative;
+   background:#ffffff;
+}
+.timeline__point{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    width: 15px;
+    height: 15px;
+    background:#ffffff;
+    border-radius: 50%;
+}
+.timeline__point--bottom{
+    top: initial;
+    bottom: 0;
+}
+.timeline__title{
+    margin: 0;
+    font-size: 1.15em;
+    font-weight: bold;
+}
+
+.timeline__paragraph{
+    line-height: 1.5;
+}
+.btn{
+  width: 30%;
+  padding-top: 10px;
+  padding-bottom: 10px; 
+  border-color: #fff;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-bottom: 100px;
+}
+.btn:hover{
+    background-color: #5b0427;
+}
+
+/* activities */
+
+.con {
+    background-color: white;
+}
+
+.act {
+    border: solid 2px darkred;
+    border-radius: 20px;
+    box-shadow: darkred;
+}
+
+.history h4 {
+    color: #830707;
+}
+
+.con:hover{
+    transform: scale(1.1);
+    border-width: 5px;
+}
+
+@keyframes timeline {
+
+    
+    
+}
+
+@media screen and (max-width:500px)
+{
+    
+    .text1 {
+        font-size: 40px;
+    }
+    .text2{
+        font-size: 30px; 
+    }
+
+    .btn{
+        width: 50%;
+    }   
+}

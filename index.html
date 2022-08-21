@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STP'22 | Machathon 3.0</title>
+    <link href="http://stp-org.com/logo.png" rel="icon" type="image/png">
+
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- stylesheet -->
+    <link href="css/styles.css" rel="stylesheet">
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+
+
+<video playsinline autoplay muted loop poster="polina.jpg" id="bgvid">
+    <source src="./videos/network.mp4" type="video/mp4">
+</video>
+
+
+<body>
+    <main class="font ">
+        <img class="w-100" src="images/cover macathon.png">
+        <!-- =====================What is Machathon Section===================== -->
+        <section>
+            <div class="back-img">
+                <h1 class="text-center shadow-lg p-4 bg-white text-size">What is<span class=" glitch text-dark" data-text="&nbsp;MACHATHON"> MACHATHON</span> ?
+                </h1>
+                <div id="container">
+                    <div class="text-center paragraph mx-auto h3 p-3 pb-5 text-white">
+                        <span id="completetext"></span>
+                        <span id="text">
+
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- =====================Prizes Section===================== -->
+        <!-- <section>
+            <div class="bg-white shadow-lg " style="margin-top:-8px">
+                <p class="paragraph fw-bolder text-center h1 mx-auto p-4  ">Prizes</p>
+            </div>
+            <div class="row row-cols-1 row-cols-md-4 g-4 m-4 pt-5 pb-5">
+                <div class="col">
+                    <div class="card card-rounded text-center mx-auto prizes" style="--color: #FFB404;">
+                        <img src="./images/1st.png" class="card-img-top w-75 mx-auto " alt="...">
+                        <div class="card-body">
+                            <h2 class="card-title mt-4 mb-4">First Place</h2>
+                            <p class="card-text h2">10,000 EGP</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-rounded text-center mx-auto prizes" style="--color: #C0C0C0;">
+                        <img src="./images/1st.png" class="card-img-top w-75 mx-auto " alt="...">
+                        <div class="card-body mt-4 mb-4">
+                            <h2 class="card-title">First Place</h2>
+                            <p class="card-text h2">10,000 EGP</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-rounded text-center mx-auto prizes" style="--color: #CD7F32;">
+                        <img src="./images/1st.png" class="card-img-top w-75 mx-auto " alt="...">
+                        <div class="card-body mt-4 mb-4">
+                            <h2 class="card-title">First Place</h2>
+                            <p class="card-text h2">10,000 EGP</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-rounded text-center mx-auto prizes" style="--color: #a19d94 ;">
+                        <img src="./images/1st.png" class="card-img-top w-75 mx-auto " alt="...">
+                        <div class="card-body mt-4 mb-4">
+                            <h2 class="card-title">First Place</h2>
+                            <p class="card-text h2">10,000 EGP</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <!-- =====================Learn and Expose Section===================== -->
+        <div class="bg-white shadow-lg">
+            <p class="paragraph fw-bolder text-center h1 mx-auto p-4 "> COMPETE &amp; CONNECT  !</p>
+        </div>
+        <section>
+            <div class="row row-cols-1 row-cols-md-2 g-4 m-5 pt-2 pb-5">
+                <div class="col">
+                    <div class="card mb-3 h-100 img-card">
+                        <div class="row g-0 d-flex " >
+                            <div class="col-sm-5 margins  ">
+                                <img src="./images/Compete3.png" class=" img-fluid rounded-circle pt-sm-5" alt="..." >
+                            </div>
+                            <div class="col-sm-7 justify-content-center align-self-center margins-end ">
+                                <div class="card-body text-center ">
+                                    <h2 class="card-title  mt-3">COMPETE</h2>
+                                    <p class="card-text h5 ">Let your Machine Learning creativity and knowledge come to the light in a 3 days online competition.</p>
+                                    <button onclick="window.open('./Type/compete.html','_blank')" data-hover="➤➤" class="button-card mx-auto">
+                                        <div>Learn More</div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-3 h-100 img-card">
+                        <div class="row g-0 d-flex">
+                            <div class="col-sm-5 margins "  >
+                                <img src="./images/WebsiteExpose.png" class="img-fluid rounded-circle pt-sm-5" alt="...">
+                            </div>
+                            <div class="col-sm-7 justify-content-center align-self-center margins-end" >
+                                <div class="card-body text-center ">
+                                    <h2 class="card-title  mt-3">CONNECT</h2>
+                                    <p class="card-text h5 ">Attend the summit to connect with Mentors, Engineering Companies and enjoy speeches!</p>
+                                    <button onclick="window.open('./Type/connect.html','_blank')" data-hover="➤➤" class="button-card mx-auto">
+                                        <div>Learn More</div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+
+            </div>
+            <div class="bg-white shadow-lg text-center mb-5">
+                <p class="paragraph fw-bolder text-center h1 mx-auto p-4 ">Don't miss the Chance!</p>
+                <button onclick="window.open('../Machathon_Form/','_blank','_blank')" data-hover="➤➤" class="button-card mx-auto mb-4">
+                    <div>Register Now</div>
+                </button>
+            </div>
+        </section>
+        <!-- =====================Speakers Section===================== -->
+        <!-- <div class="bg-white shadow-lg " style="margin-top:2px;">
+            <p class="paragraph fw-bolder text-center h1 mx-auto p-4 bg-white">Our Speakers</p>
+        </div>
+        <section class="section-speaker" style="margin-top:-25px;">
+            <div class="container-speaker">
+                <div class="card-speaker">
+                    <img src="./images/stevejops.jpg">
+                    <div class="card__head">Steve Jops</div>
+                    <div class="centered-speaker text-center  ">Steven Paul Jobs was an American business magnate, industrial designer, media proprietor, and investor. <br><a href="https://www.linkedin.com/"><i
+                                class='fa fa-linkedin-square' style='color: #2867B2'></i></a> <a href="https://www.github.com/"><i class='fa fa-github' style='color:#171515'></i></a> <a href="https://www.facebook.com/"><i class='fa fa-facebook-square'
+                                style='color:#3b5998 '></i></a> </div>
+                </div>
+                <div class="card-speaker">
+                    <img src="./images/stevejops.jpg">
+                    <div class="card__head">Steve Jops</div>
+                    <div class="centered-speaker text-center  ">Steven Paul Jobs was an American business magnate, industrial designer, media proprietor, and investor. <br><a href="https://www.linkedin.com/"><i
+                                class='fa fa-linkedin-square' style='color: #2867B2'></i></a> <a href="https://www.github.com/"><i class='fa fa-github' style='color:#171515'></i></a> <a href="https://www.facebook.com/"><i class='fa fa-facebook-square'
+                                style='color:#3b5998 '></i></a> </div>
+                </div> -->
+                <!-- This Part will be hidden in mobile view -->
+                <!-- <div class="card-speaker mobile-hide">
+                    <img src="./images/stevejops.jpg">
+                    <div class="card__head">Steve Jops</div>
+                    <div class="centered-speaker text-center ">Steven Paul Jobs was an American business magnate, industrial designer, media proprietor, and investor. <br><a href="https://www.linkedin.com/"><i
+                                class='fa fa-linkedin-square' style='color: #2867B2'></i></a> <a href="https://www.github.com/"><i class='fa fa-github' style='color:#171515'></i></a> <a href="https://www.facebook.com/"><i class='fa fa-facebook-square'
+                                style='color:#3b5998 '></i></a> </div>
+                </div>
+                <div class="card-speaker mobile-hide">
+                    <img src="./images/stevejops.jpg">
+                    <div class="card__head">Steve Jops</div>
+                    <div class="centered-speaker text-center  ">Steven Paul Jobs was an American business magnate, industrial designer, media proprietor, and investor. <br><a href="https://www.linkedin.com/"><i
+                                class='fa fa-linkedin-square' style='color: #2867B2'></i></a> <a href="https://www.github.com/"><i class='fa fa-github' style='color:#171515'></i></a> <a href="https://www.facebook.com/"><i class='fa fa-facebook-square'
+                                style='color:#3b5998 '></i></a> </div>
+                </div>
+            </div>
+        </section> -->
+        <!-- This part will be visible in mobile view -->
+        <!-- <div class="container-speaker mobile-appear">
+            <div class="card-speaker">
+                <img src="./images/stevejops.jpg">
+                <div class="card__head">Steve Jops</div>
+                <div class="centered-speaker text-center  ">Steven Paul Jobs was an American business magnate, industrial designer, media proprietor, and investor. <br><a href="https://www.linkedin.com/"><i
+                            class='fa fa-linkedin-square' style='color: #2867B2'></i></a> <a href="https://www.github.com/"><i class='fa fa-github' style='color:#171515'></i></a> <a href="https://www.facebook.com/"><i class='fa fa-facebook-square'
+                            style='color:#3b5998 '></i></a> </div>
+            </div>
+            <div class="card-speaker">
+                <img src="./images/stevejops.jpg">
+                <div class="card__head">Steve Jops</div>
+                <div class="centered-speaker text-center  ">Steven Paul Jobs was an American business magnate, industrial designer, media proprietor, and investor. <br><a href="https://www.linkedin.com/"><i
+                            class='fa fa-linkedin-square' style='color: #2867B2'></i></a> <a href="https://www.github.com/"><i class='fa fa-github' style='color:#171515'></i></a> <a href="https://www.facebook.com/"><i class='fa fa-facebook-square'
+                            style='color:#3b5998 '></i></a> </div>
+            </div>
+        </div> -->
+        <!-- =====================History Section===================== -->
+        <div id="History " class="back-img pb-5" >
+
+            <p class="paragraph fw-bolder text-center h1 mx-auto p-4 bg-white" style="width:100%;">History</p>
+            <div class="container-fluid">
+                <div class="row justify-content-center  p-3 caption">
+                    <div class="col-md-8 text-center mt-4 text-lg-start ">
+                        <h2 class="display-6 bg-white" style="text-align: center; color:#5b0427;"> MACHATHON 1.0</h2>
+                        <p class="lead firstContent" style="text-align: center">The first 3-days Machine Learning Summit and Hackathon for students in Egypt with prizes of 20,000 EGP, held in Nile University and sponsored by Vodafone, Jumia, Elmenus, Incorta and many more!
+                        </p>
+                    </div>
+                </div>
+                <div class="row justify-content-center  p-3 caption">
+                    <div class="col-md-8 text-center mt-4 text-lg-start ">
+                        <h2 class="display-6 bg-white" style="text-align: center; color:#5b0427;"> MACHATHON 1.1 </h2>
+                        <p class="lead firstContent">An online Machine Learning Hackathon held during the start of the pandemic in aim to decrease it's spreading and increase awareness about the virus, with total prizes of 15,000 EGP sponsored by Elsevier and the help of mentors from all over the world.</p>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center  p-3 caption">
+                    <div class="col-md-8 text-center mt-4 text-lg-start ">
+                        <h2 class="display-6 bg-white" style="text-align: center; color:#5b0427;"> MACHATHON 2.0 </h2>
+                        <p class="lead firstContent">The first ever NLP in Arabic Language Competition, held online with total prizes of 50,000 EGP, sponsored by Incorta besides an online summit held on Eventtus with the participation of many great Engineering Companies.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+
+                <div class="mySlides">
+                    <div class="numbertext">1 /9 </div>
+                    <img src="./images/History/IMG_0052.jpg" class="img-fluid">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2 / 9</div>
+                    <img src="./images/History/IMG_0049.jpg" class="img-fluid">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">3 / 9</div>
+                    <img src="./images/History/IMG_0051.jpg" class="img-fluid">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">4 / 9</div>
+                    <img src="./images/History/IMG_0049.jpg" class="img-fluid">
+                </div>
+
+                <div class="mySlides ">
+                    <div class="numbertext">5 / 9</div>
+                    <img src="./images/History/001 (1 of 1)-10.jpg" class="img-fluid">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">6 / 9</div>
+                    <img src="./images/History/DSC_0022 (3).jpg" class="img-fluid">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">7 / 9</div>
+                    <img src="./images/History/DSC_0050.jpg" class="img-fluid">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">8 / 9</div>
+                    <img src="./images/History/DSC_0117.jpg" class="img-fluid">
+                </div>
+
+
+                <div class="mySlides">
+                    <div class="numbertext">9 / 9</div>
+                    <img src="./images/History/IMG_0043.jpg" style="width:100%">
+                </div>
+
+
+
+
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+                <span class="dot" onclick="currentSlide(7)"></span>
+                <span class="dot" onclick="currentSlide(8)"></span>
+                <span class="dot" onclick="currentSlide(9)"></span>
+            </div>
+
+
+
+
+
+
+
+
+        </div>
+        <!-- =====================Sponsors Section===================== -->
+        <!-- <div id="Sponsors ">
+            <p class="paragraph fw-bolder text-center h1 mx-auto p-4 bg-white " style="width: 100%; ">Sponsored by </p>
+
+            <div class="container-lg defult ">
+                <div class="row ">
+                    <div class="col-2 transition ">
+                        <img class='' src='./images/test.png' width="100% " height="100% ">
+                    </div>
+
+                    <div class="col-2 transition ">
+                        <img class='' src='./images/test.png' width="100% " height="100% ">
+                    </div>
+
+                    <div class="col-2 transition ">
+                        <img class='' src='./images/test.png' width="100% " height="100% ">
+                    </div>
+
+                    <div class="col-2 transition ">
+                        <img class='' src='./images/test.png' width="100% " height="100% ">
+                    </div>
+
+                    <div class="col-2 transition ">
+                        <img class='' src='./images/test.png' width="100% " height="100% ">
+                    </div>
+
+                    <div class="col-2 transition ">
+                        <img class='' src='./images/test.png' width="100% " height="100% ">
+                    </div>
+
+                </div>
+            </div>
+        </div> -->
+        <br>
+        <br>
+        <section id="Footer">
+            <div style="margin-top: 50px;">
+                <div style="height: 70px; width: 100%; background-color:rgb(151, 19, 19);">
+                    <footer class="footer">
+                        <div class="waves">
+                            <div class="wave" id="wave1"></div>
+                            <div class="wave" id="wave2"></div>
+                            <div class="wave" id="wave3"></div>
+                            <div class="wave" id="wave4"></div>
+                        </div>
+                        <ul class="social-icon">
+                            <li class="social-icon__item">
+                                <a class="social-icon__link" href="https://www.facebook.com/STP.Organization/">
+                                    <ion-icon name="logo-facebook"></ion-icon>
+                                </a>
+                            </li>
+                            <li class="social-icon__item">
+                                <a class="social-icon__link" href="https://www.linkedin.com/company/stpegypt/">
+                                    <ion-icon name="logo-linkedin"></ion-icon>
+                                </a>
+                            </li>
+                            <li class="social-icon__item">
+                                <a class="social-icon__link" href="https://www.instagram.com/STP_Egypt/">
+                                    <ion-icon name="logo-instagram"></ion-icon>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="menu">
+                            <li class="menu__item"><a class="menu__link" href="https://www.stp-org.com/">Home</a></li>
+                            <li class="menu__item"><a class="menu__link" href="https://www.stp-org.com/#about">About</a></li>
+                            <li class="menu__item"><a class="menu__link" href="https://www.stp-org.com/#team">Team</a></li>
+                            <li class="menu__item"><a class="menu__link" href="https://www.stp-org.com/#contact">Contact</a></li>
+        
+                        </ul>
+                    </footer>
+    </main>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./javascript/script.js"></script>
+
+</body>
+
+</html>
